@@ -812,7 +812,7 @@ if (q.includes('--help')) return reply(examkosong)
  reply('Success! Your Bood Is Full')
  }
  break
- case 'hunt': case 'hunting': {
+ cagse 'hunt': cagse 'hunting': {
 if (q.includes('--help')) return reply(examkosong) 
  if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
  if (isCekDarah < 1) return reply('Your Blood Is Gone, Try To Heal Using Potions') 
