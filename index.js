@@ -71,7 +71,7 @@ async function startGojoMdNx() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await GojoMdNx.sendContact(callerId, global.owner)
-    GojoMdNx.sendMessage(callerId, { text: `*Automatic Block System!*\nDon't Call Me!\nContact me with another whatsapp number and dimand Unblock`}, { quoted : pa7rick })
+    GojoMdNx.sendMessage(callerId, { text: `*📌 Automatic Block System!*\n👿 Don't Call Me!\nℹ️ Contact me with another whatsapp number and dimand Unblock`}, { quoted : pa7rick })
     await sleep(8000)
     await GojoMdNx.updateBlockStatus(callerId, "block")
     }
