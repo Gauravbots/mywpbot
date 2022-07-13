@@ -77,7 +77,7 @@ async function startGojoMdNx() {
     }
     })
 
-    GojoMdNx.ev.on('messages.upsert', async chatUpdate 
+    GojoMdNx.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
         try {
         mek = chatUpdate.messages[0]
